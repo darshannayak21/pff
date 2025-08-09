@@ -44,8 +44,13 @@ const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
+  // Use whatever was saved
   body.setAttribute('data-theme', savedTheme);
   updateThemeIcon(savedTheme);
+} else {
+  // Default to light mode if nothing saved
+  body.setAttribute('data-theme', 'light');
+  updateThemeIcon('light');
 }
 themeToggle.addEventListener('click', () => {
   const currentTheme = body.getAttribute('data-theme') || 'light';
