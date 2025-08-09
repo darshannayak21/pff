@@ -1,0 +1,62 @@
+/* Purple Dark Cursor Trail CSS */
+.cursor-dot {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: #612f8f;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: normal;
+    transition: transform 0.1s ease-out;
+    box-shadow: 0 0 15px rgba(147, 51, 234, 0.8), 0 0 25px rgba(147, 51, 234, 0.4);
+}
+
+/* Enhanced purple gradient colors for better visibility */
+.cursor-dot:nth-child(1) { 
+    background: #4c098a; 
+    box-shadow: 0 0 15px rgba(66, 14, 114, 0.9), 0 0 25px rgba(147, 51, 234, 0.5);
+}
+.cursor-dot:nth-child(2) { 
+    background: #3c0e60; 
+    box-shadow: 0 0 12px rgba(139, 38, 214, 0.8), 0 0 20px rgba(139, 38, 214, 0.4);
+}
+.cursor-dot:nth-child(3) { 
+    background: #390e54; 
+    box-shadow: 0 0 10px rgba(124, 30, 184, 0.7), 0 0 18px rgba(124, 30, 184, 0.3);
+}
+.cursor-dot:nth-child(4) { 
+    background: #571b77; 
+    box-shadow: 0 0 8px rgba(109, 26, 154, 0.6), 0 0 15px rgba(109, 26, 154, 0.3);
+}
+.cursor-dot:nth-child(5) { 
+    background: #5e167c; 
+    box-shadow: 0 0 6px rgba(94, 22, 124, 0.5), 0 0 12px rgba(94, 22, 124, 0.25);
+}
+.cursor-dot:nth-child(6) { 
+    background: #4f125e; 
+    box-shadow: 0 0 5px rgba(79, 18, 94, 0.4), 0 0 10px rgba(79, 18, 94, 0.2);
+}
+.cursor-dot:nth-child(7) { 
+    background: #400e40; 
+    box-shadow: 0 0 4px rgba(64, 14, 64, 0.3), 0 0 8px rgba(64, 14, 64, 0.15);
+}
+.cursor-dot:nth-child(8) { 
+    background: #310a32; 
+    box-shadow: 0 0 3px rgba(49, 10, 50, 0.25), 0 0 6px rgba(49, 10, 50, 0.1);
+}
+.cursor-dot:nth-child(9) { 
+    background: #220624; 
+    box-shadow: 0 0 2px rgba(34, 6, 36, 0.2), 0 0 4px rgba(34, 6, 36, 0.08);
+}
+.cursor-dot:nth-child(10) { 
+    background: #130216; 
+    box-shadow: 0 0 1px rgba(19, 2, 22, 0.15), 0 0 2px rgba(19, 2, 22, 0.05);
+}
+
+/* Optional: Hide default cursor if you want only the trail */
+/* 
+body {
+    cursor: none;
+}
+*/

@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Darshan Nayak — Portfolio</title>
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@700&display=swap" rel="stylesheet">
+<!-- FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<!-- AOS for simple scroll animations -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<!-- GSAP & ScrollTrigger for advanced scroll effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="cursor-trail.css">
+<script src="cursor-trail.js"></script>
+
+</head>
+<body>
+    <div id="scroll-progress"></div>
+  <!-- Navbar -->
+  <nav class="glass-navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">DN</a>
+        <ul class="glass-nav-links active">
+    <li><a href="#home" class="glass-nav-link">Home</a></li>
+    <li><a href="#about" class="glass-nav-link">About</a></li>
+    <li><a href="#projects" class="glass-nav-link">Projects</a></li>
+    <li><a href="#currently-exploring" class="glass-nav-link">Exploring</a></li>
+    <li><a href="#certificates" class="glass-nav-link">Certificates</a></li>
+    <li><a href="#contact" class="glass-nav-link">Contact</a></li>
+    
+  </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hamburger Button (only on mobile) -->
+<button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<!-- Mobile Dropdown Menu -->
+<div class="mobile-nav-dropdown" id="mobile-nav-dropdown">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#exploring">Exploring</a>
+  <a href="#certificates">Certificates</a>
+  <a href="#contact">Contact</a>
+</div>
+
+
+  <!-- Hero Section -->
+ <section class="hero" id="hero" data-aos="fade-up">
+  <div id="vanta-bg"></div>
+  <div class="hero-content">
+   <h1 class="hero-title" id="hero-typed">Darshan Nayak — Aspiring AI Engineer & Creative Problem Solver</h1>
+    <p class="hero-subtitle">Designing smarter solutions through tech & creativity.</p>
+    <button class="btn btn-primary magnet-btn hero-cta shine" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Contact Me</button>
+  </div>
+</section>
+
+
+ <!-- About Me Section -->
+<section class="about section scroll-pop" id="about" data-aos="fade-up">
+  <div class="container about-content">
+    <div class="about-image interactive-photo-wrapper">
+  <img
+    src="your-image.jpg"
+    alt="Darshan Nayak"
+    class="interactive-photo"
+    id="about-photo"
+  />
+</div>
+<div class="about-text">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I’m Darshan Nayak, a 17-year-old currently pursuing an integrated BTech in Computer Science Engineering with a specialization in Artificial Intelligence and Data Science at MIT WPU, Pune. After completing my 10th grade, I was confident in my passion for computer science and decided to follow this path by enrolling in a specialized program that aligns with my interests and career goals.
+      </p>
+      <p>
+        I have a strong passion for developing apps and solving real-world problems, with a focus on building intuitive, efficient, and visually appealing digital experiences. My technical skills include hands-on expertise in HTML, CSS, JavaScript, C++, C, Java, and Python. I enjoy transforming complex challenges into simple, user-friendly solutions. I've also participated in multiple different hackathons and coding competitions, where I have honed my skills in problem-solving and teamwork.
+      </p>
+      <p>
+        Over the past two years, I’ve worked on a variety of projects—from a rescue app and a financial literacy platform to a recent multimodal emotion recognition and mood-enhancing application. Beyond coding, I’m passionate about photography, sculpture, drawing realistic face portraits, playing football, and musical instruments like the piano, guitar, ukulele, and drums.
+      </p>
+      <!-- Add skills, education, etc. as needed -->
+    </div>
+  </div>
+</section>
+
+<!-- Dashboard Section -->
+<section id="dashboard" class="dashboard section" data-aos="fade-up">
+  <div class="container">
+    <h2 class="section-title">Dashboard</h2>
+    <div class="dashboard-grid">
+      <div class="dashboard-card interactive-tilt" data-stat="projects">
+        <div class="dashboard-icon">
+          <i class="fas fa-project-diagram"></i>
+        </div>
+        <div class="dashboard-content">
+          <h3 class="dashboard-number">13</h3>
+          <p class="dashboard-label">Projects Completed</p>
+        </div>
+      </div>
+      <div class="dashboard-card interactive-tilt" data-stat="hackathons">
+        <div class="dashboard-icon">
+          <i class="fas fa-trophy"></i>
+        </div>
+        <div class="dashboard-content">
+          <h3 class="dashboard-number">4</h3>
+          <p class="dashboard-label">Hackathons</p>
+        </div>
+      </div>
+      <div class="dashboard-card interactive-tilt" data-stat="languages">
+        <div class="dashboard-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="dashboard-content">
+          <h3 class="dashboard-number">5</h3>
+          <p class="dashboard-label">Programming Languages</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+              <div class="view-more-section">
+    <button class="view-more-btn" id="viewMoreBtn">
+        Wanna know more?
+    </button>
+</div>
+
+<div class="timeline-popup" id="timelinePopup">
+    <div class="popup-container">
+        <div class="popup-header">
+            <h2 class="section-title">Education & focus</h2>
+            <button class="close-popup-btn" id="closePopupBtn">&times;</button>
+        </div>
+        <div class="popup-content" id="popupContent">
+            <div class="timeline-container">
+                <div class="timeline-line-container" id="timelineLineContainer">
+                    <div class="timeline-line" id="timelineLine"></div>
+                    <!-- Timeline points are dynamically positioned by JS! -->
+                    <div class="timeline-point" data-section="0"></div>
+                    <div class="timeline-point" data-section="1"></div>
+                    <div class="timeline-point" data-section="2"></div>
+                    <div class="timeline-point" data-section="3"></div>
+                </div>
+              
+
+            
+                    <div class="content-text">
+                        <div class="timeline-section" data-section="0">
+                            <h3 class="section-title">Current Focus</h3>
+                            <div class="section-content">
+                                <p>I'm currently exploring and researching the next generation of AI with my current goal being writing research papers on how we can enhance existing systems to make artificial intelligence more human-like, immersive, and emotionally aware.</p>
+                                <p>My goal is to evolve AI beyond logic-driven tasks into experiences that mirror human thinking and behavior.</p>
+                                <h4>This includes areas such as:</h4>
+                                <ul>
+                                    <li>Simulating emotions and empathy</li>
+                                    <li>Allowing AI to perceive abstract experiences like pain</li>
+                                    <li>Enabling debates and reasoning between AI agents</li>
+                                    <li>Creating self-learning ecosystems where AI learns from both positive and negative scenarios</li>
+                                </ul>
+                                <p>One recent concept I'm working on involves designing an AI system that rewards another agent for performing malicious actions (e.g., hacking simulated data). Observing this, other AI agents would independently develop countermeasures. These protective responses could then be adapted for use in real-world human cybersecurity applications—a sort of AI-driven red-teaming approach for future defense systems.</p>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="timeline-section" data-section="1">
+                            <h3 class="section-title">Learning</h3>
+                            <div class="section-content">
+                                <h4>Academic Excellence:</h4>
+                                <ul>
+                                    <li>I’m currently pursuing my studies at MIT WPU, building a strong foundation in core computer science.
+Right now, I'm focused on mastering Data Structures & Algorithms, Machine Learning, Deep Learning, and Java through self-learning and hands-on projects.</li>
+                                </ul>
+                                
+                                <ul>
+                                    <li>I actively participate in hackathons and competitions, constantly testing and improving my skills.
+I'm also working to perfect HTML, CSS, React.js, and other frontend/backend technologies—aiming to become a well-rounded developer capable of building complete solutions independently.
+My goal is to stand strong on the foundation of my hard work, grow through challenges, and create impactful projects that shape my future.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-section" data-section="2">
+                            <h3 class="section-title">Hackathons & Competitions</h3>
+                            <div class="section-content">
+                                <h4>Competition Experience:</h4>
+                                <ul>
+                                    <li>Participated in multiple hackathons focusing on AI and web development</li>
+                                    <li>Competed in coding competitions to sharpen problem-solving skills</li>
+                                    <li>Collaborated with diverse teams to build innovative solutions</li>
+                                    <li>Gained experience in rapid prototyping and presentation skills</li>
+                                </ul>
+                                <h4>Skills Gained:</h4>
+                                <ul>
+                                    <li>Advanced problem-solving under pressure</li>
+                                    <li>Team collaboration and leadership</li>
+                                    <li>Rapid technology adoption and implementation</li>
+                                    <li>Public speaking and project presentation</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-section" data-section="3">
+                            <h3 class="section-title">My Childhood Journey</h3>
+                            <div class="section-content">
+                                <h4>Early Interests:</h4>
+                                <p>From a young age, I was fascinated by how things work, especially technology. This curiosity led me to explore various creative and technical pursuits.</p>
+                                <h4>Creative Development:</h4>
+                                <ul>
+                                    <li>Developed passion for photography and visual storytelling</li>
+                                    <li>Learned sculpture and realistic portrait drawing</li>
+                                    <li>Started playing multiple musical instruments: piano, guitar, ukulele, and drums</li>
+                                    <li>Actively participated in football, building teamwork skills</li>
+                                </ul>
+                                <h4>The Tech Journey Begins:</h4>
+                                <p>My interest in computer science truly began after 10th grade when I was introduced to the world of Artificial Intelligence and Data Science. I instantly realized this was the future—and the space where I wanted to make my mark.
+The idea of being able to build intelligent systems that can think, learn, and solve real-world problems deeply inspired me. I’ve committed myself to this path with the goal of becoming the first AI engineer in my family, paving the way forward with hard work, curiosity, and passion.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="projects-preview section center-viewport">
+  <!-- BEGIN NEW WRAPPER FOR CENTERING -->
+  <div class="projects-center-flex">
+    <div class="projects-title-topright">
+      <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-subtext">
+    click anywhere on the card to view projects
+  </div>
+
+  
+  
+    <div class="projects-center-content">
+      <div class="projects-fanned-cards">
+        <!-- Data Science / Data Analysis -->
+        <div class="project-card-fanned" style="--order:1;" data-popup="data">
+          <div class="project-image-fanned" style="background:#06b6d4;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rstudio/rstudio-original.svg" alt="Data Science Icon"/>
+          </div>
+          <div class="project-content-fanned">
+            <h3 class="project-title-fanned">Others</h3>
+            <p>Projects that highlight my ability to uncover hidden patterns and turn messy data into meaningful insights—with real-world impact at the core.</p>
+            <button class="btn btn-secondary view-projects-btn" data-popup="data">View Projects</button>
+          </div>
+        </div>
+        <!-- Front-end Development -->
+        <div class="project-card-fanned" style="--order:2;" data-popup="frontend">
+          <div class="project-image-fanned" style="background:#f43f5e;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Frontend Icon"/>
+          </div>
+          <div class="project-content-fanned">
+            <h3 class="project-title-fanned">Front-end Development</h3>
+            <p>A collection of frontend-only projects — including websites and commercial apps — designed for everyday use, focused on real challenges and UI/UX design.</p>
+            <button class="btn btn-secondary view-projects-btn" data-popup="frontend">View Projects</button>
+          </div>
+        </div>
+        <!-- Machine Learning Models -->
+        <div class="project-card-fanned" style="--order:3;" data-popup="ml">
+          <div class="project-image-fanned" style="background:#4f46e5;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="ML Icon"/>
+          </div>
+          <div class="project-content-fanned">
+            <h3 class="project-title-fanned">Machine Learning Models</h3>
+            <p>A curated selection of recent machine learning models I've developed to tackle real-world problems and create a positive impact on society.</p>
+            <button class="btn btn-secondary view-projects-btn" data-popup="ml">View Projects</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- END NEW WRAPPER FOR CENTERING -->
+</section>
+
+<!-- Popups for each category FLOAT OUTSIDE the section for fullscreen effect -->
+<div class="projects-popup" id="popup-ml">
+  <div class="popup-content">
+    <button class="close-popup">&times;</button>
+    <h3>Machine Learning Projects</h3>
+    <div class="projects-grid">
+      <!-- Example cards -->
+      <div class="project-card floating-card">
+        <div class="project-image-placeholder">
+          <img src="bhavana.jpg" alt="Project thumbnail" />
+        </div>
+        <div class="project-content">
+          <h4 class="project-title">Bhavana AI</h4>
+          <div class="project-description">bhavana ai: Bhavana AI is a multimodal mental health assessment tool that analyzes your video, text, and questionnaire responses using advanced AI techniques.
+
+          It then recommends personalized Spotify music, movies, and nearby venues to boost your wellbeing. Also has a chatbot to talk with for more support.</div>
+
+        </div>
+      </div>
+      <div class="project-card floating-card">
+        <div class="project-image-placeholder">
+          <img src="nutri.jpg" alt="Project thumbnail" />
+        </div>
+        <div class="project-content">
+          <h4 class="project-title">NutriGuide</h4>
+          <div class="project-description">NutriGuide: A comprehensive nutrition tracking app that helps users monitor their dietary habits, set goals, and receive personalized meal recommendations.
+
+NutriGuide utilizes advanced algorithms to analyze user data and provide insights for healthier eating choices.</div>
+          
+        </div>
+      </div>
+      <div class="project-card floating-card">
+        <div class="project-image-placeholder">
+          <img src="caracc.jpg" alt="Project thumbnail" />
+        </div>
+        <div class="project-content">
+          <h4 class="project-title">Car accident prevention</h4>
+          <div class="project-description">An advanced system that detects driver drowsiness and behavior to prevent accidents and alert drivers in real-time.
+
+This project uses computer vision and machine learning techniques to analyze driver behavior, ensuring safer journeys.</div>
+
+        </div>
+      </div>
+         <div class="project-card floating-card">
+        <div class="project-image-placeholder">
+          <img src="fashion.jpg" alt="Project thumbnail" />
+        </div>
+        <div class="project-content">
+          <h4 class="project-title">Fashion recommendation</h4>
+          <div class="project-description">Fashion recommendations: An AI-driven platform that analyzes your style preferences and suggests outfits, accessories, and trends tailored just for you.
+
+This project combines machine learning and user data to create personalized fashion experiences, making it easier to stay stylish.</div>
+
+        </div>
+      </div>
+       <div class="project-card floating-card">
+        <div class="project-image-placeholder">
+          <img src="emotion.jpg" alt="Project thumbnail" />
+        </div>
+        <div class="project-content">
+          <h4 class="project-title">Emotion Recognition</h4>
+          <div class="project-description">A powerful tool that uses AI to analyze facial expressions and voice tones with Mcq and text analysis, providing insights into emotional states and well-being.
+
+This project leverages computer vision and natural language processing to deliver accurate emotion recognition</div>
+
+        </div>
+      </div>
+      <div class="project-card floating-card">
+        <div class="project-image-placeholder">
+          <img src="flood.jpg" alt="Project thumbnail" />
+        </div>
+        <div class="project-content">
+          <h4 class="project-title">Flood body detection</h4>
+          <div class="project-description">This project addresses a real-world Ph.D.-level challenge. It tackles human detection in extreme flood conditions using a deep learning model trained on blurred and flooded images.
+It accurately identifies number of people even in low visibility or motion-blurred scenes, ideal for rescue and disaster response.
+The model uses a custom YOLOv5 architecture with heavy augmentation for real-world flood scenarios.
+It aids automated surveillance, drone rescue missions, and smart city flood management systems.</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="projects-popup" id="popup-frontend">
+  <div class="popup-content">
+    <button class="close-popup">&times;</button>
+    <h3>Front-end Development Projects</h3>
+    <div class="projects-grid">
+      <div class="project-card floating-card">
+        <div class="project-image-placeholder">
+          <img src="lol.jpg" alt="Project thumbnail" />
+        </div>
+        <div class="project-content">
+          <h4 class="project-title">TaskMaster</h4>
+          <div class="project-description">TaskMaster: A stunning, all-in-one dashboard for tasks, habits, calendar, and timers—fast, interactive, and seamless on any device.
+
+TaskMaster uses modern HTML, CSS, and JavaScript with AOS and GSAP for smooth, animated UI and a fully responsive design.</div>
+
+        </div>
+      </div>
+      <div class="project-card floating-card">
+        <div class="project-image-placeholder">
+          <img src="Habit.jpg" alt="Project thumbnail" />
+        </div>
+        <div class="project-content">
+          <h4 class="project-title">HabitFlow</h4>
+          <div class="project-description">HabitFlow is a fun, streak-based habit tracker that helps build good habits through daily motivation and progress tracking.
+It shows a calendar view for each habit and includes a smart chatbot that suggests ways to improve and remember forgotten habits.</div>
+
+        </div>
+      </div>
+      <div class="project-card floating-card">
+        <div class="project-image-placeholder">
+          <img src="esra.jpg" alt="Project thumbnail" />
+        </div>
+        <div class="project-content">
+          <h4 class="project-title">ESRA</h4>
+          <div class="project-description"> ESRA: An emergency services app designed to assist individuals who are unsure of what to do or whom to contact during emergencies.It provides instant access to nearby police stations, hospitals, fire stations, and mental health services based on your location, along with stored contact numbers for all essential emergency services.
+</div>
+
+        </div>
+      </div>
+      <div class="project-card floating-card">
+        <div class="project-image-placeholder">
+          <img src="NFL.jpg" alt="Project thumbnail" />
+        </div>
+        <div class="project-content">
+          <h4 class="project-title">Nayak Fishland</h4>
+          <div class="project-description"> Nayak Fishland is a clean, mobile-friendly restaurant website I built for my uncle’s seafood place.
+Customers can scan a QR code to open it, view the full menu, explore a gallery of top dishes, and watch YouTube reviews.
+Clicking the phone number or email opens contact apps directly, and the live location link opens in Google Maps.
+</div>
+
+        </div>
+      </div>
+      </div>
+  </div>
+</div>
+<div class="projects-popup" id="popup-data">
+  <div class="popup-content">
+    <button class="close-popup">&times;</button>
+    <h3>Others</h3>
+    <div class="projects-grid">
+      <div class="project-card floating-card">
+        <div class="project-image-placeholder">
+          <img src="DS.jpg" alt="Project thumbnail" />
+        </div>
+        <div class="project-content">
+          <h4 class="project-title">Data science and analysis</h4>
+          <div class="project-description"> IoT-Botnet Traffic Analysis & Preprocessing for Cybersecurity Applications
+
+I worked on the UNSW_2018_IoT_Botnet dataset, a highly imbalanced and complex cybersecurity dataset containing over 3.6 million rows and 46 features, collected from real IoT device traffic.
+This project required advanced data engineering steps including multi-source CSV merging, deduplication, and bidirectional imputation (forward and backward fill) to address missing values.
+
+I performed feature pruning by dropping non-informative columns like pkSeqID, category, and subcategory, and applied label encoding on all categorical variables using a column-wise approach with reusable encoders.
+This extensive preprocessing pipeline ensured the dataset was balanced, noise-free, and machine learning-ready, especially for intrusion detection systems (IDS) and network traffic classification tasks.
+
+The analysis provided insights into malicious vs. benign traffic patterns, laying the foundation for building robust anomaly detection or supervised classification models in real-world IoT networks.
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Currently Exploring Section -->
+<section id="currently-exploring" class="currently-exploring section" data-aos="fade-up">
+  <div class="container">
+    <h2 class="section-title">Currently Exploring</h2>
+    <div class="exploring-grid">
+      <div class="exploring-box interactive-tilt" data-topic="self-reflective-rag">
+        <div class="exploring-icon">
+          <i class="fas fa-brain"></i>
+        </div>
+        <h3>Self-Reflective RAG</h3>
+        <p>Advanced retrieval systems with self-improvement capabilities</p>
+      </div>
+      <div class="exploring-box interactive-tilt" data-topic="ai-agents">
+        <div class="exploring-icon">
+          <i class="fas fa-robot"></i>
+        </div>
+        <h3>AI Agents</h3>
+        <p>Autonomous intelligent systems for complex problem solving</p>
+      </div>
+      <div class="exploring-box interactive-tilt" data-topic="swarm-agents">
+        <div class="exploring-icon">
+          <i class="fas fa-network-wired"></i>
+        </div>
+        <h3>Swarm Agents</h3>
+        <p>Collaborative multi-agent systems working in harmony</p>
+      </div>
+      <div class="exploring-box interactive-tilt" data-topic="research-papers">
+        <div class="exploring-icon">
+          <i class="fas fa-file-alt"></i>
+        </div>
+        <h3>Research Papers</h3>
+        <p>Latest breakthroughs in AI and machine learning</p>
+      </div>
+      <div class="exploring-box interactive-tilt" data-topic="prompt-engineering">
+        <div class="exploring-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3>Prompt Engineering</h3>
+        <p>Crafting effective prompts for optimal AI responses</p>
+      </div>
+      <div class="exploring-box interactive-tilt" data-topic="gen-ai">
+        <div class="exploring-icon">
+          <i class="fas fa-magic"></i>
+        </div>
+        <h3>Gen AI</h3>
+        <p>Generative artificial intelligence and creative applications</p>
+      </div>
+      <div class="exploring-box interactive-tilt" data-topic="ai-automations">
+        <div class="exploring-icon">
+          <i class="fas fa-cogs"></i>
+        </div>
+        <h3>AI Automations</h3>
+        <p>Streamlining workflows with intelligent automation</p>
+      </div>
+      <div class="exploring-box interactive-tilt" data-topic="ai-products">
+        <div class="exploring-icon">
+          <i class="fas fa-rocket"></i>
+        </div>
+        <h3>Building AI Products</h3>
+        <p>End-to-end development of AI-powered solutions</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mastering Section -->
+<section id="mastering" class="mastering section" data-aos="fade-up">
+  <div class="container">
+    <h2 class="section-title">Mastering</h2>
+    <div class="mastering-progress">
+      <div class="progress-item" data-progress="60">
+        <div class="progress-header">
+          <span class="progress-label">UI/UX Design</span>
+          <span class="progress-percentage">60%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-width="60"></div>
+        </div>
+      </div>
+      <div class="progress-item" data-progress="60">
+        <div class="progress-header">
+          <span class="progress-label">AI Agents</span>
+          <span class="progress-percentage">60%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-width="60"></div>
+        </div>
+      </div>
+      <div class="progress-item" data-progress="60">
+        <div class="progress-header">
+          <span class="progress-label">Java</span>
+          <span class="progress-percentage">60%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-width="60"></div>
+        </div>
+      </div>
+      <div class="progress-item" data-progress="60">
+        <div class="progress-header">
+          <span class="progress-label">DSA (C++)</span>
+          <span class="progress-percentage">60%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-width="60"></div>
+        </div>
+      </div>
+      <div class="progress-item" data-progress="60">
+        <div class="progress-header">
+          <span class="progress-label">Python</span>
+          <span class="progress-percentage">60%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-width="60"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="skills-bar-fade-wrapper">
+  <div class="skills-bar-track">
+    <span>PYTHON</span>
+    <span>CSS</span>
+    <span>HTML</span>
+    <span>JS</span>
+    <span>C++</span>
+    <span>C</span>
+    <span>JAVA</span>
+    <span>PYTHON</span>
+    <span>CSS</span>
+    <span>HTML</span>
+    <span>JS</span>
+    <span>C++</span>
+    <span>C</span>
+    <span>JAVA</span>
+     <span>PYTHON</span>
+    <span>CSS</span>
+    <span>HTML</span>
+    <span>JS</span>
+    <span>C++</span>
+    <span>C</span>
+    <span>JAVA</span>
+    <span>PYTHON</span>
+    <span>CSS</span>
+    <span>HTML</span>
+    <span>JS</span>
+    <span>C++</span>
+    <span>C</span>
+    <span>JAVA</span>
+  </div>
+</div>
+
+<section id="certificates" class="certificates-section interactive-glow" data-aos="fade-up">
+  <div class="container">
+    <h2 class="section-title">Certificates</h2>
+    <p class="section-desc">Here is a curated selection of some of my most recent certificates, showcasing my ongoing commitment to learning, growth, and excellence across various domains.</p>
+    <div style="text-align:center;">
+      <button id="certificates-btn" class="view-more-btn" aria-expanded="false">
+        <span>View Certificates</span>
+      </button>
+    </div>
+    <div id="certificates-dropdown" class="certificates-dropdown" aria-hidden="true">
+      <div class="certificates-column-grid">
+        <!-- Certificate Card 1 -->
+         <div class="certificate-rect-card interactive-glow">
+          <div class="certificate-img-rect">
+            <img src="GFG.jpg" alt="Certificate 3">
+          </div>
+          <div class="certificate-content-rect">
+            <h4>DSA SELFPACED</h4>
+            <p>Geeks for Geeks</p>
+            <span>This certificate is from GeeksforGeeks for completing an 8-week self-paced course on Data Structures & Algorithms (DSA).
+It reflects my foundational understanding of core algorithms, data handling techniques, and efficient problem-solving skills.</span>
+          </div>
+        </div>
+        <div class="certificate-rect-card interactive-glow">
+          <div class="certificate-img-rect">
+            <img src="hack.jpg" alt="Certificate 1">
+          </div>
+          <div class="certificate-content-rect">
+            <h4>Workathon 1</h4>
+            <p>MIT WPU </p>
+            <span>This is my first college-level certificate, awarded for my participation in the Workathon track of HACK MIT-WPU 2024.
+This certificate is a university-level hackathon held from March 19–21.
+Our team built ESRA, an emergency support and rescue app, showcasing innovation in real-world crisis response.
+The certificate recognizes our participation and creative efforts during the Workathon track.</span>
+          </div>
+        </div>
+        <!-- Certificate Card 2 -->
+        <div class="certificate-rect-card interactive-glow">
+          <div class="certificate-img-rect">
+            <img src="edx.jpg" alt="Certificate 2">
+          </div>
+          <div class="certificate-content-rect">
+            <h4>Data Visualization and Building Dashboards with Excel and Cognos</h4>
+            <p>EDX</p>
+            <span>This is an official IBM-verified certificate via edX for completing the course DV0130: Data Visualization and Building Dashboards with Excel and Cognos.
+It reflects my skills in creating interactive dashboards, performing visual analysis, and leveraging business intelligence tools like IBM Cognos and Excel for data storytelling.</span>
+          </div>
+        </div>
+        <!-- Repeat for more cards -->
+        <div class="certificate-rect-card interactive-glow">
+          <div class="certificate-img-rect">
+            <img src="workshop.jpg" alt="Certificate 3">
+          </div>
+          <div class="certificate-content-rect">
+            <h4>Robotics workshop</h4>
+            <p>MIT WPU</p>
+            <span>This certificate is for completing a Robotics Workshop conducted by the MIT-WPU Tech Team on 10th and 11th October 2023.
+It marks my hands-on learning experience in robotics fundamentals, hardware components, and control systems under expert guidance.</span>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Contact Section -->
+<section class="contact section scroll-pop" id="contact" data-aos="fade-up">
+  <div class="container contact-content">
+    <div class="contact-row">
+    <h4 class="section-title">If any offers contact:</h4>
+      <div class="contact-card interactive-tilt">
+        <span class="contact-icon">
+          <img src="https://img.icons8.com/ios-filled/32/ffffff/new-post.png" alt="Email" style="width:24px;height:24px;">
+        </span>
+        <span class="contact-text">email: ndarshan507@gmail.com</span>
+      </div>
+      <div class="contact-card interactive-tilt">
+        <span class="contact-icon">
+          <img src="https://img.icons8.com/ios-filled/32/ffffff/camera.png" alt="Instagram" style="width:24px;height:24px;">
+        </span>
+        <span class="contact-text">insta: @darshan.mp3</span>
+      </div>
+    </div>
+    </div>
+   <div class="contact-buttons">
+  <button class="btn btn-secondary magnet-btn" id="toggle-contact-form">Email Darshan</button>
+  <button class="btn btn-secondary magnet-btn" id="toggle-meeting-form">Book a Meeting</button>
+</div>
+    <div class="dropdown-panel" id="contact-dropdown">
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="contact-name">Name</label>
+          <input id="contact-name" name="name" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-email">Email</label>
+          <input id="contact-email" name="email" type="email" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+    <div class="dropdown-panel" id="meeting-dropdown">
+      <form id="meeting-form">
+        <div class="form-group">
+          <label for="meeting-name">Name</label>
+          <input id="meeting-name" name="name" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="meeting-purpose">Purpose</label>
+          <input id="meeting-purpose" name="purpose" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="meeting-date">Date</label>
+          <input id="meeting-date" name="date" type="date" required>
+        </div>
+        <div class="form-group">
+          <label for="meeting-time">Time</label>
+          <input id="meeting-time" name="time" type="time" required>
+        </div>
+        <div class="form-group">
+          <label for="meeting-duration">Duration</label>
+          <select id="meeting-duration" name="duration" required>
+            <option value="15">15 min</option>
+            <option value="30">30 min</option>
+            <option value="60">60 min</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary interactive-tilt">Book Meeting</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-copyright">
+        &copy; 2025 Darshan Nayak. All rights reserved.
+        last updated 04/05/2025 
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast -->
+<div id="desktop-toast" class="site-toast">
+  <span class="site-toast-message">
+    Open on desktop for best experience
+  </span>
+  <button id="toast-close-btn" class="site-toast-close" aria-label="Close notification">&times;</button>
+</div>
+
+
+  <!-- Scripts -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
