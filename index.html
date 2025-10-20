@@ -20,8 +20,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="cursor-trail.css">
-<script src="cursor-trail.js"></script>
+
 
 </head>
 <body>
@@ -45,24 +44,6 @@
     </div>
   </nav>
 
-  <!-- Hamburger Button (only on mobile) -->
-<button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open menu">
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
-
-<!-- Mobile Dropdown Menu -->
-<div class="mobile-nav-dropdown" id="mobile-nav-dropdown">
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#projects">Projects</a>
-  <a href="#exploring">Exploring</a>
-  <a href="#certificates">Certificates</a>
-  <a href="#contact">Contact</a>
-</div>
-
-
   <!-- Hero Section -->
  <section class="hero" id="hero" data-aos="fade-up">
   <div id="vanta-bg"></div>
@@ -79,7 +60,7 @@
   <div class="container about-content">
     <div class="about-image interactive-photo-wrapper">
   <img
-    src="your-image.jpg"
+    src="images/your-image.jpg"
     alt="Darshan Nayak"
     class="interactive-photo"
     id="about-photo"
@@ -111,7 +92,7 @@
           <i class="fas fa-project-diagram"></i>
         </div>
         <div class="dashboard-content">
-          <h3 class="dashboard-number">13</h3>
+          <h3 class="dashboard-number">20+</h3>
           <p class="dashboard-label">Projects Completed</p>
         </div>
       </div>
@@ -120,7 +101,7 @@
           <i class="fas fa-trophy"></i>
         </div>
         <div class="dashboard-content">
-          <h3 class="dashboard-number">4</h3>
+          <h3 class="dashboard-number">6</h3>
           <p class="dashboard-label">Hackathons</p>
         </div>
       </div>
@@ -137,7 +118,7 @@
   </div>
 </section>
 
-              <div class="view-more-section">
+<div class="view-more-section">
     <button class="view-more-btn" id="viewMoreBtn">
         Wanna know more?
     </button>
@@ -239,7 +220,8 @@ The idea of being able to build intelligent systems that can think, learn, and s
             </div>
         </div>
     </div>
-</div>
+
+
 
 <!-- PROJECTS SECTION -->
 <section id="projects" class="projects-preview section center-viewport">
@@ -263,7 +245,7 @@ The idea of being able to build intelligent systems that can think, learn, and s
           </div>
           <div class="project-content-fanned">
             <h3 class="project-title-fanned">Others</h3>
-            <p>Projects that highlight my ability to uncover hidden patterns and turn messy data into meaningful insights—with real-world impact at the core.</p>
+            <p>Some of my high-impact projects built for hackathons, research, and exploratory development—used to test ideas, solve real-world problems, and push technical boundaries.</p>
             <button class="btn btn-secondary view-projects-btn" data-popup="data">View Projects</button>
           </div>
         </div>
@@ -305,7 +287,7 @@ The idea of being able to build intelligent systems that can think, learn, and s
       <!-- Example cards -->
       <div class="project-card floating-card">
         <div class="project-image-placeholder">
-          <img src="bhavana.jpg" alt="Project thumbnail" />
+          <img src="images/bhavana.jpg" alt="Project thumbnail" />
         </div>
         <div class="project-content">
           <h4 class="project-title">Bhavana AI</h4>
@@ -317,7 +299,7 @@ The idea of being able to build intelligent systems that can think, learn, and s
       </div>
       <div class="project-card floating-card">
         <div class="project-image-placeholder">
-          <img src="nutri.jpg" alt="Project thumbnail" />
+          <img src="images/nutri.jpg" alt="Project thumbnail" />
         </div>
         <div class="project-content">
           <h4 class="project-title">NutriGuide</h4>
@@ -329,7 +311,29 @@ NutriGuide utilizes advanced algorithms to analyze user data and provide insight
       </div>
       <div class="project-card floating-card">
         <div class="project-image-placeholder">
-          <img src="caracc.jpg" alt="Project thumbnail" />
+          <img src="images/helmet.jpg" alt="Project thumbnail" />
+        </div>
+        <div class="project-content">
+          <h4 class="project-title">Helmet detector</h4>
+          <div class="project-description">Helmet detector: A real-time system that uses computer vision to ensure safety compliance by detecting whether individuals are wearing helmets in hazardous environments.
+
+This project leverages deep learning techniques to improve workplace safety and reduce accidents and is highly accurate while doing so.</div>
+
+        </div>
+      </div>
+      <div class="project-card floating-card">
+        <div class="project-image-placeholder">
+          <img src="images/dronecv.jpg" alt="Project thumbnail" />
+        </div>
+        <div class="project-content">
+          <h4 class="project-title">VisionGuard AI</h4>
+          <div class="project-description">Developed VisionGuard AI, a high-performance real-time object detection system using deep convolutional neural networks and YOLOv8. This project detects humans and drones by extracting multi-level visual features and using anchor-free detection for speed and accuracy. GPU acceleration, advanced data augmentation, and robust model design ensure reliable results in complex outdoor environments.</div>
+          
+        </div>
+      </div>
+      <div class="project-card floating-card">
+        <div class="project-image-placeholder">
+          <img src="images/caracc.jpg" alt="Project thumbnail" />
         </div>
         <div class="project-content">
           <h4 class="project-title">Car accident prevention</h4>
@@ -339,9 +343,19 @@ This project uses computer vision and machine learning techniques to analyze dri
 
         </div>
       </div>
+      <div class="project-card floating-card">
+        <div class="project-image-placeholder">
+          <img src="images/RPPG.jpg" alt="Project thumbnail" />
+        </div>
+        <div class="project-content">
+          <h4 class="project-title">RPPG</h4>
+          <div class="project-description">A contactless vitals monitoring system that uses just a webcam to extract heart rate, HRV, respiration, and BP trends in real-time. Combining computer vision, signal processing, and adaptive filtering, it remains accurate under motion and poor lighting—enabling safer, sensor-free driver monitoring.</div>
+
+        </div>
+      </div>
          <div class="project-card floating-card">
         <div class="project-image-placeholder">
-          <img src="fashion.jpg" alt="Project thumbnail" />
+          <img src="images/fashion.jpg" alt="Project thumbnail" />
         </div>
         <div class="project-content">
           <h4 class="project-title">Fashion recommendation</h4>
@@ -353,7 +367,7 @@ This project combines machine learning and user data to create personalized fash
       </div>
        <div class="project-card floating-card">
         <div class="project-image-placeholder">
-          <img src="emotion.jpg" alt="Project thumbnail" />
+          <img src="images/emotion.jpg" alt="Project thumbnail" />
         </div>
         <div class="project-content">
           <h4 class="project-title">Emotion Recognition</h4>
@@ -365,7 +379,7 @@ This project leverages computer vision and natural language processing to delive
       </div>
       <div class="project-card floating-card">
         <div class="project-image-placeholder">
-          <img src="flood.jpg" alt="Project thumbnail" />
+          <img src="images/flood.jpg" alt="Project thumbnail" />
         </div>
         <div class="project-content">
           <h4 class="project-title">Flood body detection</h4>
@@ -386,7 +400,27 @@ It aids automated surveillance, drone rescue missions, and smart city flood mana
     <div class="projects-grid">
       <div class="project-card floating-card">
         <div class="project-image-placeholder">
-          <img src="lol.jpg" alt="Project thumbnail" />
+          <img src="images/BLUEFRONT.jpg" alt="Project thumbnail" />
+        </div>
+        <div class="project-content">
+          <h4 class="project-title">BlueTrust Front End</h4>
+          <div class="project-description">A production-grade, blockchain-backed front end built using React and TypeScript, with three role-specific portals for NGOs, government verifiers, and corporate ESG buyers. It enables site registration, NDVI-based satellite verification, restoration evidence uploads, credit transactions, and audit-proof ESG reporting—mapped to region-specific satellite data and secured with on-chain attestations.</div>
+
+        </div>
+      </div>
+      <div class="project-card floating-card">
+        <div class="project-image-placeholder">
+          <img src="images/dronesim.jpg" alt="Project thumbnail" />
+        </div>
+        <div class="project-content">
+          <h4 class="project-title">CityRescue FANET Simulator</h4>
+          <div class="project-description">Developed CityRescue FANET Simulator, an interactive drone network simulation built with Three.js. The frontend visualizes emergency rescue operations, showcasing real-time communication and coordination among drones distributed throughout a large city. By representing medical, search, and command drones, the platform demonstrates how FANET-based systems enable rapid data sharing and collaborative search, improving survivor discovery and rescue. This project was selected at the college level and advanced to Open India level in the Smart India Hackathon.</div>
+
+        </div>
+      </div>
+      <div class="project-card floating-card">
+        <div class="project-image-placeholder">
+          <img src="images/lol.jpg" alt="Project thumbnail" />
         </div>
         <div class="project-content">
           <h4 class="project-title">TaskMaster</h4>
@@ -398,7 +432,7 @@ TaskMaster uses modern HTML, CSS, and JavaScript with AOS and GSAP for smooth, a
       </div>
       <div class="project-card floating-card">
         <div class="project-image-placeholder">
-          <img src="Habit.jpg" alt="Project thumbnail" />
+          <img src="images/Habit.jpg" alt="Project thumbnail" />
         </div>
         <div class="project-content">
           <h4 class="project-title">HabitFlow</h4>
@@ -409,7 +443,7 @@ It shows a calendar view for each habit and includes a smart chatbot that sugges
       </div>
       <div class="project-card floating-card">
         <div class="project-image-placeholder">
-          <img src="esra.jpg" alt="Project thumbnail" />
+          <img src="images/esra.jpg" alt="Project thumbnail" />
         </div>
         <div class="project-content">
           <h4 class="project-title">ESRA</h4>
@@ -420,7 +454,7 @@ It shows a calendar view for each habit and includes a smart chatbot that sugges
       </div>
       <div class="project-card floating-card">
         <div class="project-image-placeholder">
-          <img src="NFL.jpg" alt="Project thumbnail" />
+          <img src="images/NFL.jpg" alt="Project thumbnail" />
         </div>
         <div class="project-content">
           <h4 class="project-title">Nayak Fishland</h4>
@@ -437,11 +471,56 @@ Clicking the phone number or email opens contact apps directly, and the live loc
 <div class="projects-popup" id="popup-data">
   <div class="popup-content">
     <button class="close-popup">&times;</button>
-    <h3>Others</h3>
+    <h3>Large scale projects</h3>
     <div class="projects-grid">
       <div class="project-card floating-card">
         <div class="project-image-placeholder">
-          <img src="DS.jpg" alt="Project thumbnail" />
+          <img src="images/blue.jpg" alt="Project thumbnail" />
+        </div>
+        <div class="project-content">
+          <h4 class="project-title">BlueTrust: AI-Driven Satellite Monitoring for Ecological Restoration</h4>
+          <div class="project-description"> BlueTrust is a smart restoration monitoring platform that combines Sentinel-2 satellite imagery with advanced machine learning to track vegetation health and restoration progress across India’s critical blue carbon ecosystems.
+
+It automatically identifies and monitors registered restoration sites using NDVI (Normalized Difference Vegetation Index), applying temporal ML models to detect meaningful ecological change over time. The system computes percentage improvements in NDVI, classifies vegetation health into defined bands (e.g., Dense, Moderate, Sparse), and filters out noise from seasonal or lighting variations to ensure accurate assessments.
+
+Users can compare past vs. current satellite snapshots, draw or define custom regions, and save progress data for future audits. A blockchain-based verification layer anchors all restoration events, ensuring transparency, traceability, and credibility in credit issuance and ESG reporting.
+
+BlueTrust brings scientific precision to large-scale restoration by enabling data-driven impact measurement, robust tracking of environmental gains, and a verifiable audit trail for nature-based carbon solutions.
+</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card floating-card">
+        <div class="project-image-placeholder">
+          <img src="images/multi.jpg" alt="Project thumbnail" />
+        </div>
+        <div class="project-content">
+          <h4 class="project-title">My Dynamic Multi-Agent AI System </h4>
+          <div class="project-description"> Built a dynamic Multi-Agent AI System that orchestrates multiple specialized large language models to solve complex workflows. Unlike single-model setups, my framework deploys expert agents—each with tools like DeepSeek, Gemini, or Groq—to divide and conquer tasks such as research, coding, writing, and validation. Powered by LangChain and LangGraph, a central supervisor manages prompt engineering, optimizes agent allocation, and fuses all outputs into a seamless, high-quality result. This scalable, collaborative design achieves superior efficiency, output quality, and resource utilization—delivering AI solutions that adapt in real-time to the demands of any project.
+</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card floating-card">
+        <div class="project-image-placeholder">
+          <img src="images/football.jpg" alt="Project thumbnail" />
+        </div>
+        <div class="project-content">
+          <h4 class="project-title">Football GNN</h4>
+          <div class="project-description"> Built an end-to-end football analytics pipeline that harnesses Graph Neural Networks to turn player interactions into meaningful signal. By constructing position-aware player graphs across 72 competitions and training a GraphSAGE model, my system creates high-dimensional, role-specific player embeddings from diverse event streams. Each player node is enriched with detailed action features, while edges prioritize both intra-position and cross-position links for tactical depth. The architecture normalizes heterogeneous data—passes, shots, duels, keeper actions—allowing true role resolution and retrieval of comparable players. This approach enables position-corrected similarity for recruitment and transparent diagnostics, pushing GNNs as a universal blueprint for any domain where relationships drive outcomes—from sports and healthcare to fraud and supply chain networks
+</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card floating-card">
+        <div class="project-image-placeholder">
+          <img src="images/DS.jpg" alt="Project thumbnail" />
         </div>
         <div class="project-content">
           <h4 class="project-title">Data science and analysis</h4>
@@ -628,7 +707,7 @@ The analysis provided insights into malicious vs. benign traffic patterns, layin
         <!-- Certificate Card 1 -->
          <div class="certificate-rect-card interactive-glow">
           <div class="certificate-img-rect">
-            <img src="GFG.jpg" alt="Certificate 3">
+            <img src="images/GFG.jpg" alt="Certificate 3">
           </div>
           <div class="certificate-content-rect">
             <h4>DSA SELFPACED</h4>
@@ -639,7 +718,7 @@ It reflects my foundational understanding of core algorithms, data handling tech
         </div>
         <div class="certificate-rect-card interactive-glow">
           <div class="certificate-img-rect">
-            <img src="hack.jpg" alt="Certificate 1">
+            <img src="images/hack.jpg" alt="Certificate 1">
           </div>
           <div class="certificate-content-rect">
             <h4>Workathon 1</h4>
@@ -653,7 +732,7 @@ The certificate recognizes our participation and creative efforts during the Wor
         <!-- Certificate Card 2 -->
         <div class="certificate-rect-card interactive-glow">
           <div class="certificate-img-rect">
-            <img src="edx.jpg" alt="Certificate 2">
+            <img src="images/edx.jpg" alt="Certificate 2">
           </div>
           <div class="certificate-content-rect">
             <h4>Data Visualization and Building Dashboards with Excel and Cognos</h4>
@@ -665,7 +744,7 @@ It reflects my skills in creating interactive dashboards, performing visual anal
         <!-- Repeat for more cards -->
         <div class="certificate-rect-card interactive-glow">
           <div class="certificate-img-rect">
-            <img src="workshop.jpg" alt="Certificate 3">
+            <img src="images/workshop.jpg" alt="Certificate 3">
           </div>
           <div class="certificate-content-rect">
             <h4>Robotics workshop</h4>
@@ -692,6 +771,12 @@ It marks my hands-on learning experience in robotics fundamentals, hardware comp
           <img src="https://img.icons8.com/ios-filled/32/ffffff/new-post.png" alt="Email" style="width:24px;height:24px;">
         </span>
         <span class="contact-text">email: ndarshan507@gmail.com</span>
+      </div>
+      <div class="contact-card interactive-tilt">
+        <span class="contact-icon">
+          <img src="https://img.icons8.com/ios-filled/32/ffffff/linkedin.png" alt="LinkedIn" style="width:24px;height:24px;">
+        </span>
+        <span class="contact-text">linkedin: /in/darshan-nayak</span>
       </div>
       <div class="contact-card interactive-tilt">
         <span class="contact-icon">
@@ -791,3 +876,4 @@ It marks my hands-on learning experience in robotics fundamentals, hardware comp
   <script src="app.js"></script>
 </body>
 </html>
+
