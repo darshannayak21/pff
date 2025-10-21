@@ -4937,3 +4937,496 @@ html {
     position: relative;
     animation: popUpExpand 0.77s cubic-bezier(.22,1,.36,1);
 }
+.certificates-dropdown {
+  width: 100%;
+  background: rgba(30,34,51,0.92);
+  backdrop-filter: blur(16px);
+  border-radius: 18px;
+  box-shadow: 0 8px 40px 0 #232a3d38;
+  padding: 0 1rem;
+  margin-top: 2.2rem;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    max-height 0.68s cubic-bezier(.22,1,.36,1),
+    opacity 0.44s cubic-bezier(.22,1,.36,1);
+}
+
+.certificates-dropdown.active {
+  max-height: 500px; /* Fixed height for scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+  opacity: 1;
+  pointer-events: auto;
+  animation: dropdownIn 0.42s cubic-bezier(.22,1,.36,1);
+  padding: 1rem; /* Add padding when active */
+}
+
+/* Custom scrollbar styling for certificates dropdown */
+.certificates-dropdown::-webkit-scrollbar {
+  width: 8px;
+}
+
+.certificates-dropdown::-webkit-scrollbar-track {
+  background: rgba(35, 42, 61, 0.3);
+  border-radius: 10px;
+}
+
+.certificates-dropdown::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.6);
+  border-radius: 10px;
+}
+
+.certificates-dropdown::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.8);
+}
+.certificates-dropdown {
+  width: 100%;
+  background: rgba(30,34,51,0.92);
+  backdrop-filter: blur(16px);
+  border-radius: 18px;
+  box-shadow: 0 8px 40px 0 #232a3d32;
+  padding: 0 1.2rem;
+  margin-top: 2.2rem;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    max-height 0.68s cubic-bezier(.22,1,.36,1),
+    opacity 0.44s cubic-bezier(.22,1,.36,1);
+}
+.certificates-dropdown.active {
+  max-height: 500px; /* Fixed height for scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+  opacity: 1;
+  pointer-events: auto;
+  padding: 1.2rem; /* Maintain padding when active */
+}
+.certificates-section {
+  background: var(--bg-secondary, #232a3d);
+  border-radius: 24px;
+  margin: 3.5rem auto 0;
+  max-width: 960px;
+  padding: 4rem 2rem 4rem 2rem; /* Increased from 0 2rem 2.5rem 2rem */
+  position: relative;
+  box-shadow: 0 14px 60px rgba(107, 33, 168, 0.38);
+  transition: box-shadow 0.5s cubic-bezier(.22,1,.36,1);
+  min-height: 500px; /* Added minimum height */
+}
+
+/* For the section title spacing */
+.certificates-section .section-title {
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+/* Increase spacing for the dropdown */
+.certificates-dropdown {
+  margin-top: 2.5rem; /* Increased from 2.2rem */
+  padding-bottom: 3rem; /* Added extra bottom padding */
+}
+
+/* Mobile responsive */
+@media (max-width: 700px) {
+  .certificates-section {
+    padding: 3rem 1.5rem 3rem 1.5rem;
+    min-height: 400px;
+  }
+}
+/* Update the certificates section to allow overflow */
+.certificates-section {
+  background: var(--bg-secondary, #232a3d);
+  border-radius: 24px;
+  margin: 3.5rem auto 0;
+  max-width: 960px;
+  padding: 4rem 2rem 4rem 2rem;
+  position: relative;
+  box-shadow: 0 14px 60px rgba(107, 33, 168, 0.38);
+  transition: box-shadow 0.5s cubic-bezier(.22,1,.36,1);
+  overflow: visible; /* Changed from hidden to visible */
+  z-index: 10; /* Add z-index */
+}
+
+/* Update the certificates dropdown to float above everything */
+.certificates-dropdown {
+  width: 100%;
+  background: rgba(30,34,51,0.92);
+  backdrop-filter: blur(16px);
+  border-radius: 18px;
+  box-shadow: 0 8px 40px 0 #232a3d38;
+  padding: 0 1rem;
+  margin-top: 2.2rem;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: max-height 0.68s cubic-bezier(.22,1,.36,1), opacity 0.44s cubic-bezier(.22,1,.36,1);
+  position: relative; /* Add this */
+  z-index: 100; /* High z-index to float above other sections */
+}
+
+.certificates-dropdown.active {
+  max-height: 500px;
+  overflow-y: auto;
+  opacity: 1;
+  pointer-events: auto;
+  padding: 1rem;
+  z-index: 100; /* Maintain high z-index when active */
+}
+
+/* Ensure certificate cards also have proper z-index */
+.certificate-rect-card {
+  position: relative;
+  z-index: 50;
+}
+
+/* Make sure the next section doesn't overlap */
+.contact, #contact, .footer {
+  position: relative;
+  z-index: 1; /* Lower z-index than certificates dropdown */
+}
+/* Update the certificates dropdown to be taller when active */
+.certificates-dropdown {
+  width: 100%;
+  background: rgba(30,34,51,0.92);
+  backdrop-filter: blur(16px);
+  border-radius: 18px;
+  box-shadow: 0 8px 40px 0 #232a3d38;
+  padding: 0 1rem;
+  margin-top: 2.2rem;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: max-height 0.68s cubic-bezier(.22,1,.36,1), opacity 0.44s cubic-bezier(.22,1,.36,1);
+  position: relative;
+  z-index: 100;
+}
+
+.certificates-dropdown.active {
+  max-height: 700px; /* Increased from 500px to 1200px for much longer dropdown */
+  overflow-y: auto;
+  opacity: 1;
+  pointer-events: auto;
+  padding: 1rem;
+  z-index: 100;
+}
+
+/* Optional: Add some padding to the bottom for better spacing */
+.certificates-grid {
+  padding-bottom: 2rem;
+}
+
+/* Smooth scrolling for the dropdown if content exceeds max height */
+.certificates-dropdown::-webkit-scrollbar {
+  width: 8px;
+}
+
+.certificates-dropdown::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4
+}
+/* MOBILE: Remove ALL fanning - make cards stack flat and vertically */
+@media (max-width: 700px) {
+  
+  /* Container for the cards */
+  .projects-fanned-cards {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1.5rem !important;
+    height: auto !important;
+    min-height: auto !important;
+    padding: 1rem 0 !important;
+    position: relative !important;
+  }
+  
+  /* Each card - completely flat, stacked vertically */
+  .project-card-fanned {
+    position: relative !important;  /* Change from absolute to relative */
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;  /* Remove ALL transforms */
+    rotate: 0deg !important;
+    width: 90% !important;
+    max-width: 320px !important;
+    min-width: 0 !important;
+    margin: 0 auto !important;
+    z-index: 1 !important;
+    pointer-events: auto !important;
+  }
+  
+  /* Remove ALL nth-child transforms that create the fan effect */
+  .project-card-fanned:nth-child(1),
+  .project-card-fanned:nth-child(2),
+  .project-card-fanned:nth-child(3) {
+    transform: none !important;
+    rotate: 0deg !important;
+    left: auto !important;
+    top: auto !important;
+    position: relative !important;
+  }
+  
+  /* Hover effect - simple lift only */
+  .project-card-fanned:hover,
+  .project-card-fanned:focus-visible {
+    transform: translateY(-8px) scale(1.02) !important;
+    rotate: 0deg !important;
+  }
+  
+  /* Ensure parent container doesn't interfere */
+  .projects-center-content,
+  .projects-center-flex {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
+/* MOBILE: Make project cards LARGER and fit within section */
+@media (max-width: 700px) {
+  
+  /* Make the entire projects section TALLER */
+  .projects-preview.section.center-viewport {
+    min-height: 1100px !important; /* Much taller to fit all stacked cards */
+    height: auto !important;
+    padding-top: 2rem !important;
+    padding-bottom: 3rem !important;
+    overflow-y: visible !important;
+  }
+  
+  /* Container for stacked cards */
+  .projects-fanned-cards {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 2rem !important; /* Space between cards */
+    height: auto !important;
+    min-height: 950px !important; /* Tall enough for all cards */
+    padding: 1rem 0 !important;
+    position: relative !important;
+    overflow: visible !important;
+  }
+  
+  /* Each card - TALLER to fit all text */
+  .project-card-fanned {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    rotate: 0deg !important;
+    width: 90% !important;
+    max-width: 340px !important;
+    min-height: 380px !important; /* INCREASED HEIGHT to fit text */
+    height: auto !important; /* Let it grow with content */
+    margin: 0 auto !important;
+    z-index: 1 !important;
+    pointer-events: auto !important;
+  }
+  
+  /* Content area - more padding and space */
+  .project-content-fanned {
+    padding: 1.8rem 1.4rem 1.4rem 1.4rem !important;
+    min-height: 220px !important; /* Ensure text area is tall */
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.8rem !important;
+  }
+  
+  /* Title and description */
+  .project-title-fanned {
+    font-size: 1.25rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 0.6rem !important;
+  }
+  
+  .project-content-fanned p {
+    font-size: 1.05rem !important;
+    line-height: 1.65 !important;
+    flex-grow: 1 !important; /* Let text take available space */
+  }
+  
+  /* Button at bottom */
+  .project-content-fanned .view-projects-btn {
+    margin-top: auto !important;
+    padding: 0.65rem 1.4rem !important;
+    font-size: 1.05rem !important;
+  }
+  
+  /* Remove nth-child transforms */
+  .project-card-fanned:nth-child(1),
+  .project-card-fanned:nth-child(2),
+  .project-card-fanned:nth-child(3) {
+    transform: none !important;
+    rotate: 0deg !important;
+    left: auto !important;
+    top: auto !important;
+    position: relative !important;
+  }
+  
+  /* Hover effect */
+  .project-card-fanned:hover,
+  .project-card-fanned:focus-visible {
+    transform: translateY(-6px) scale(1.02) !important;
+    rotate: 0deg !important;
+  }
+}
+/* MOBILE: Make the ENTIRE Projects section MUCH TALLER */
+@media (max-width: 700px) {
+  
+  /* Main Projects Section - Make it VERY TALL */
+  #projects,
+  .projects-preview,
+  section.projects-preview {
+    min-height: 1600px !important; /* Much taller container */
+    height: auto !important;
+    padding-top: 3rem !important;
+    padding-bottom: 4rem !important;
+    overflow: visible !important;
+  }
+  
+  /* Center content wrapper */
+  .projects-center-content,
+  .center-viewport {
+    min-height: 1500px !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    padding: 2rem 1rem !important;
+  }
+  
+  /* Container holding all 3 cards */
+  .projects-fanned-cards {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 2.5rem !important; /* Space between cards */
+    height: auto !important;
+    min-height: 1300px !important; /* Very tall to fit all cards */
+    padding: 2rem 0 !important;
+    position: relative !important;
+    overflow: visible !important;
+  }
+  
+  /* Each individual card - TALLER */
+  .project-card-fanned {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    rotate: 0deg !important;
+    width: 90% !important;
+    max-width: 340px !important;
+    min-height: 400px !important; /* Tall cards */
+    height: auto !important;
+    margin: 0 auto 0 auto !important;
+    z-index: 1 !important;
+    pointer-events: auto !important;
+  }
+  
+  /* Card content area */
+  .project-content-fanned {
+    padding: 2rem 1.5rem !important;
+    min-height: 240px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+  
+  /* Title */
+  .project-title-fanned {
+    font-size: 1.3rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 0.8rem !important;
+  }
+  
+  /* Description text */
+  .project-content-fanned p {
+    font-size: 1.05rem !important;
+    line-height: 1.7 !important;
+    flex-grow: 1 !important;
+  }
+  
+  /* Button */
+  .project-content-fanned .view-projects-btn,
+  .view-projects-btn {
+    margin-top: 1rem !important;
+    padding: 0.7rem 1.5rem !important;
+    font-size: 1.05rem !important;
+  }
+  
+  /* Remove ALL nth-child transforms (no fan effect) */
+  .project-card-fanned:nth-child(1),
+  .project-card-fanned:nth-child(2),
+  .project-card-fanned:nth-child(3) {
+    transform: none !important;
+    rotate: 0deg !important;
+    left: auto !important;
+    top: auto !important;
+    position: relative !important;
+  }
+  
+  /* Hover effect */
+  .project-card-fanned:hover {
+    transform: translateY(-6px) scale(1.02) !important;
+    rotate: 0deg !important;
+  }
+}
+/* MOBILE: Move "View Projects" button closer to text */
+@media (max-width: 700px) {
+  
+
+  
+  
+  /* Content area - reduce bottom padding to bring button up */
+  .project-content-fanned {
+    padding: 1.5rem 1.5rem 1rem 1.5rem !important; /* Less bottom padding */
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.8rem !important; /* Smaller gap */
+  }
+  
+  /* Description text - reduce bottom margin */
+  .project-content-fanned p {
+    font-size: 1.05rem !important;
+    line-height: 1.65 !important;
+    margin-bottom: 0.5rem !important; /* Small margin */
+  }
+  
+  /* Button - move it CLOSER to text */
+  .project-content-fanned .view-projects-btn,
+  .view-projects-btn {
+    margin-top: 0.5rem !important; /* Bring button closer */
+    padding: 0.65rem 1.4rem !important;
+    font-size: 1.05rem !important;
+  }
+  
+  /* Card overall - slight height adjustment */
+  .project-card-fanned {
+    min-height: 420px !important; /* Just a bit taller */
+    height: auto !important;
+  }
+}
+/* MOBILE: Add padding below "View Projects" button */
+@media (max-width: 700px) {
+  
+  /* Content area - add more bottom padding */
+  .project-content-fanned {
+    padding: 1.5rem 1.5rem 1.8rem 1.5rem !important; /* Increased bottom padding from 1rem to 1.8rem */
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.8rem !important;
+  }
+  
+  /* Button - add margin below it */
+  .project-content-fanned .view-projects-btn,
+  .view-projects-btn {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.8rem !important; /* Add space below button */
+    padding: 0.65rem 1.4rem !important;
+    font-size: 1.05rem !important;
+  }
+}
