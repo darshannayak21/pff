@@ -5430,3 +5430,82 @@ html {
     font-size: 1.05rem !important;
   }
 }
+/* MOBILE: Make the SCROLLABLE SECTION/BOX WIDER */
+@media (max-width: 700px) {
+  
+  /* The main certificates section container */
+  .certificates-section {
+    width: 95% !important; /* Wider section */
+    max-width: 95% !important;
+    padding: 3rem 1rem 3rem 1rem !important;
+    margin: 3.5rem auto !important;
+  }
+  
+  /* The dropdown scrollable area - MUCH WIDER */
+  .certificates-dropdown {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 1.5rem !important;
+  }
+  
+  /* Certificate grid inside */
+  .certificates-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .certificates-section {
+    width: 98% !important;
+    padding: 2.5rem 0.8rem 2.5rem 0.8rem !important;
+  }
+}
+/* MOBILE: Make text WIDER - use more horizontal space */
+@media (max-width: 700px) {
+  
+  /* Certificate text content area - MUCH WIDER */
+  .certificate-content,
+  .certificate-text {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0.5rem 0rem !important; /* Less side padding so text spreads wider */
+  }
+  
+  /* Text paragraphs - remove narrow max-width constraints */
+  .certificate-content p,
+  .certificate-text p,
+  .certificate-description {
+    max-width: 150% !important; /* Let text use FULL width */
+    width: 150% !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    text-align: left !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+  }
+  
+  /* Title - also wider */
+  .certificate-content h3,
+  .certificate-title {
+    max-width: 100% !important;
+    width: 100% !important;
+    font-size: 1.2rem !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+  }
+  
+  /* Certificate card overall - ensure no width restrictions */
+  .certificate-rect-card {
+    padding: 0.8rem 0.5rem !important; /* Less horizontal padding */
+  }
+  
+  /* Grid container - full width */
+  .certificates-grid {
+    padding: 0 !important;
+    gap: 1.2rem !important;
+  }
+}
